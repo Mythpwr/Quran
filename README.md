@@ -2,6 +2,8 @@
 Bu projede Kur'an-ı Kerim'i diyanetin sitesine göre sayfa sayfa olarak 'Android' uygulumasını olarak gösterimini sağlar. Veriler Json formatında sayfa sayfa olarak düzenlendi ve 'recyclerview ve adapter' aracılığı ile yüklenir.
 
 
+
+
 # Verilerin yüklenmesi
 Düzenli olması açısından verileri ayrı ayrı aldım.
 1. 'Page' için;
@@ -579,3 +581,6 @@ private fun updateSureSpinnerSelection(pageNumber: Int) {
         return sharedPreferences.getInt("last_page", 0) // Varsayılan olarak 0. sayfa
     }
   ```
+
+# Geri Bildirim ve Öneriler
+İnşallah işinize yarar. Eksiklikler ve hatalar olabilir. Zaman zaman proje üzerinde çalışıyorum. Önerileriniz varsa lütfen söyleyin.

@@ -55,7 +55,6 @@ import com.example.namaz.MainActivity
 import com.example.namaz.MediaPlayerHelperforQuran
 import com.example.namaz.R
 import com.example.namaz.databinding.ActivityQuranBinding
-import com.example.namaz.ui.Kuran_ve_ayet.Sure.SureVeAyet
 
 import com.google.firebase.FirebaseApp
 import com.google.firebase.storage.FileDownloadTask
@@ -475,8 +474,7 @@ class Quran : AppCompatActivity() {
         }
 
 
-        val ayetList: MutableList<SureVeAyet> = ArrayList()
-        val ayetList2: MutableList<SureVeAyet> = ArrayList()
+
 
 
         //   Sure_ve_ayetAdapter adapter = new Sure_ve_ayetAdapter(ayetList, this, recyclerView);
@@ -566,7 +564,7 @@ class Quran : AppCompatActivity() {
                         pageNumber?.let {
                             // selectedSureId = sureAdlari!![position].sureId
                             showPage(it) // İlgili sayfaya git
-
+                            recyclerView!!.smoothScrollToPosition(it)
                             selected_Surah = quranItems
                                 ?.find { it.pageNumber == pageNumber }
                                 ?.surahList
@@ -594,39 +592,7 @@ class Quran : AppCompatActivity() {
         adapter_.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         mealSpinner.adapter = adapter_
 
-        mealSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View,
-                position: Int,
-                id: Long
-            ) {
-                selectedMealIndex = position
-                ayetList.clear()
-                ayetList2.clear()
 
-                showLoadingScreen()
-
-                Handler().postDelayed({
-                    if (selectedMealIndex == 0) {
-                        //loadDataFromTxt(sureAdi, adapter, ayetList, MealType.MEAL1, secenekType.option1);
-                        //  adapter.notifyDataSetChanged();
-                    } else if (selectedMealIndex == 1) {
-                        // loadDataFromTxt(sureAdi, adapter2, ayetList2, MealType.MEAL2, secenekType.option2);
-                        // adapter2.notifyDataSetChanged();
-                    }
-                    // adapter.updateMeal(selectedMealIndex);
-                    // recyclerView.swapAdapter(selectedMealIndex == 0 ? adapter : adapter2, true);
-                    hideLoadingScreen()
-                }, 1500) // 1.5 saniye bekleme süresi
-
-                // adapter.notifyDataSetChanged();
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                // Bir işlem gerekirse
-            }
-        }
 
 
         val mainPage = binding.sidePanel.goToMainPage
@@ -693,19 +659,28 @@ class Quran : AppCompatActivity() {
         imm?.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
-    fun goToAyet(sureId: Int, ayetId: Int) {
-        val sure =
-            quranItems?.find { it.pageNumber == selectedPage }?.surahList?.find { it.sureId == sureId }
-        if (sure != null) {
-            selected_Surah = sure
-            updateAyetSpinner(sure)
 
-            selectedAyet = sure.ayetList.find { it.ayetId.contains(ayetId) }
-            //scrollToSelectedAyet()
+
+    private fun updateSureSpinnerSelection(pageNumber: Int) {
+        // 🔹 Sayfadaki tüm ayetleri al
+        val pageItems = getAyetlerByPageNumber(quranItems!!, pageNumber)
+
+        // 🔹 Sayfada yer alan sureleri bul
+        val sureList = pageItems.filterIsInstance<Surah>() // Sadece Surah nesnelerini al
+
+        // 🔹 Sayfadaki ilk sureyi seç (Eğer sayfada birden fazla sure varsa, ilkini al)
+        val currentSure = sureList.firstOrNull() ?: return
+
+
+        // 🔹 Spinner'daki pozisyonu bul ve güncelle
+        val index = sureAdlari?.indexOfFirst { it.contains(currentSure.trName) } ?: -1
+        if (index >= 0) {
+            sureSpinner?.setSelection(index)
+            updateAyetSpinner(currentSure)
         }
+
+        //   Log.d("Current Sure", "Index: $index, Sure: ${currentSure.trName}")
     }
-
-
     private fun updateAyetSpinner(surah: Surah?) {
         if (surah == null) return
 
@@ -736,7 +711,7 @@ class Quran : AppCompatActivity() {
 
                 if (selectedAyet != null && selectedAyet!!.ayetId.isNotEmpty()) {
                     selected_Surah?.let { sure ->
-                        goToAyet2(sure.sureId, selectedAyet!!.ayetId.first())
+                        goToAyet(sure.sureId, selectedAyet!!.ayetId.first())
                     }
                 }
             }
@@ -746,7 +721,7 @@ class Quran : AppCompatActivity() {
 
     }
 
-    fun goToAyet2(sureId: Int, ayetId: Int) {
+    fun goToAyet(sureId: Int, ayetId: Int) {
         val page = quranItems?.find { page ->
             page.surahList.any { it.sureId == sureId && it.ayetList.any { ayet -> ayet.ayetId.contains(ayetId) } }
         } ?: return
@@ -873,11 +848,14 @@ class Quran : AppCompatActivity() {
                 findViewById<ImageButton>(R.id.onceki_sayfa),
 
                 )
+            val nextPageButton =   findViewById<ImageButton>(R.id.sonraki_sayfa)
+            val prePageButton =   findViewById<ImageButton>(R.id.onceki_sayfa)
 
-            nextPageButtons.forEach { button -> button?.setOnClickListener { showNextPage() } }
-            previousPageButtons.forEach { button -> button?.setOnClickListener { showPreviousPage() } }
+           // nextPageButtons.forEach { button -> button?.setOnClickListener { showNextPage() } }
+            //previousPageButtons.forEach { button -> button?.setOnClickListener { showPreviousPage() } }
 
-
+            nextPageButton?.setOnClickListener { showNextPage() }
+            prePageButton?.setOnClickListener{ showPreviousPage() }
             val coroutineScope = CoroutineScope(Dispatchers.Main)
 
 
@@ -1004,33 +982,8 @@ class Quran : AppCompatActivity() {
         }
     }
 
-    private fun getAyetlerBySureId(sureId: Int): List<Ayet> {
-        return quranItems?.flatMap { it.surahList } // Tüm sayfalardaki sureleri al
-            ?.filter { it.sureId == sureId } // Sadece seçili sureyi al
-            ?.flatMap { it.ayetList } // Tüm ayetleri birleştir
-            ?: emptyList()
-    }
-
-    private fun updateSureSpinnerSelection(pageNumber: Int) {
-        // 🔹 Sayfadaki tüm ayetleri al
-        val pageItems = getAyetlerByPageNumber(quranItems!!, pageNumber)
-
-        // 🔹 Sayfada yer alan sureleri bul
-        val sureList = pageItems.filterIsInstance<Surah>() // Sadece Surah nesnelerini al
-
-        // 🔹 Sayfadaki ilk sureyi seç (Eğer sayfada birden fazla sure varsa, ilkini al)
-        val currentSure = sureList.firstOrNull() ?: return
 
 
-        // 🔹 Spinner'daki pozisyonu bul ve güncelle
-        val index = sureAdlari?.indexOfFirst { it.contains(currentSure.trName) } ?: -1
-        if (index >= 0) {
-            sureSpinner?.setSelection(index)
-            updateAyetSpinner(currentSure)
-        }
-
-        //   Log.d("Current Sure", "Index: $index, Sure: ${currentSure.trName}")
-    }
 
 
     private fun showLoadingScreen() {

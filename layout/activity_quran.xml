@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F0CA"
+    android:orientation="vertical"
+    tools:context="com.example.namaz.ui.Kuran_ve_ayet.Quran">
+
+    <View
+        android:id="@+id/dim_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+
+        android:elevation="10dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#9F9A7E">
+
+
+                <ImageButton
+                    android:id="@+id/goBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/sure_Ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:text="Sure Adı"
+                    android:textColor="#0B0A0A"
+
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/sonraki_sayfa"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="start"
+
+                        android:background="@drawable/baseline_arrow_back_24"
+
+
+                        />
+
+                    <EditText
+                        android:id="@+id/sayfa_gir_spinner"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="#998E8E"
+                        android:gravity="center"
+                        android:hint="Git"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:textColor="#0B0A0A"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/onceki_sayfa"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_toEndOf="@+id/sayfa_gir_spinner"
+                        android:background="@drawable/next" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sure_adi_arapca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="7dp"
+                    android:fontFamily="@font/kuran_kerim_font_abay"
+                    android:text="Arapça"
+                    android:textColor="#0B0A0A" />
+
+                <ImageButton
+                    android:id="@+id/open_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:background="@android:drawable/ic_menu_search" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp">
+
+
+            <LinearLayout
+                android:id="@+id/dynamicLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/loadingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dynamicLayout"
+                android:layout_marginBottom="134dp"
+                android:background="#54454242"
+                android:gravity="bottom"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/dynamicLayout" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressBar"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="8dp"
+                    android:text="Yükleniyor..."
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/media_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/sidePanel"
+        layout="@layout/search_activity_layout"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="start"
+        android:layout_marginEnd="-210dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+</RelativeLayout>

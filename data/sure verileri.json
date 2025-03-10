@@ -1,0 +1,688 @@
+[
+  {
+    "id": 1,
+    "sureAdi": "Fâtiha Suresi",
+    "arapca": "﴿1﴾ سُورَةُ الْفَاتِحَةِ",
+    "pageNumber": 0
+  },
+  {
+    "id": 2,
+    "sureAdi": "Bakara Suresi",
+    "arapca": "﴿2﴾ سُورَةُ الْبَقَرَةِ",
+    "pageNumber": 1
+  },
+  {
+    "id": 3,
+    "sureAdi": "Âl-i İmrân Suresi",
+    "arapca": "﴿3﴾ سُورَةُ آلِ عِمْرَانَ",
+    "pageNumber": 49
+  },
+  {
+    "id": 4,
+    "sureAdi": "Nisâ Suresi",
+    "arapca": "﴿4﴾ سُورَةُ النِّسَاءِ",
+    "pageNumber": 76
+  },
+  {
+    "id": 5,
+    "sureAdi": "Mâide Suresi",
+    "arapca": "﴿5﴾ سُورَةُ المَائِدَةِ",
+    "pageNumber": 105
+  },
+  {
+    "id": 6,
+    "sureAdi": "En'âm Suresi",
+    "arapca": "﴿6﴾ سُورَةُ الأَنْعَامِ",
+    "pageNumber": 127
+  },
+  {
+    "id": 7,
+    "sureAdi": "A'râf Suresi",
+    "arapca": "﴿7﴾ سُورَةُ الأَعْرَافِ",
+    "pageNumber": 150
+  },
+  {
+    "id": 8,
+    "sureAdi": "Enfâl Suresi",
+    "arapca": "﴿8﴾ سُورَةُ الأَنْفَالِ",
+    "pageNumber": 176
+  },
+  {
+    "id": 9,
+    "sureAdi": "Tevbe Suresi",
+    "arapca": "﴿9﴾ سُورَةُ التَّوْبَةِ",
+    "pageNumber": 186
+  },
+  {
+    "id": 10,
+    "sureAdi": "Yûnus Suresi",
+    "arapca": "﴿10﴾ سُورَةُ يُونُسَ",
+    "pageNumber": 207
+  },
+  {
+    "id": 11,
+    "sureAdi": "Hûd Suresi",
+    "arapca": "﴿11﴾ سُورَةُ هُودَ",
+    "pageNumber": 220
+  },
+  {
+    "id": 12,
+    "sureAdi": "Yûsuf Suresi",
+    "arapca": "﴿12﴾ سُورَةُ يُوسُفَ",
+    "pageNumber": 234
+  },
+  {
+    "id": 13,
+    "sureAdi": "Ra'd Suresi",
+    "arapca": "﴿13﴾ سُورَةُ الرَّعْدِ",
+    "pageNumber": 248
+  },
+  {
+    "id": 14,
+    "sureAdi": "İbrâhîm Suresi",
+    "arapca": "﴿14﴾ سُورَةُ إِبرَاهِيمَ",
+    "pageNumber": 256
+  },
+  {
+    "id": 15,
+    "sureAdi": "Hicr Suresi",
+    "arapca": "﴿15﴾ سُورَةُ الْحِجْرِ",
+    "pageNumber": 261
+  },
+  {
+    "id": 16,
+    "sureAdi": "Nahl Suresi",
+    "arapca": "﴿16﴾ سُورَةُ النَّحْلِ",
+    "pageNumber": 266
+  },
+  {
+    "id": 17,
+    "sureAdi": "İsrâ Suresi",
+    "arapca": "﴿17﴾ سُورَةُ الإِسْرَاءِ",
+    "pageNumber": 281
+  },
+  {
+    "id": 18,
+    "sureAdi": "Kehf Suresi",
+    "arapca": "﴿18﴾ سُورَةُ الْكَهْفِ",
+    "pageNumber": 292
+  },
+  {
+    "id": 19,
+    "sureAdi": "Meryem Suresi",
+    "arapca": "﴿19﴾ سُورَةُ مَرْيَمَ",
+    "pageNumber": 304
+  },
+  {
+    "id": 20,
+    "sureAdi": "Tâhâ Suresi",
+    "arapca": "﴿20﴾ سُورَةُ طٰهٰ",
+    "pageNumber": 311
+  },
+  {
+    "id": 21,
+    "sureAdi": "Enbiyâ Suresi",
+    "arapca": "﴿21﴾ سُورَةُ الأَنْبِيَاءِ",
+    "pageNumber": 321
+  },
+  {
+    "id": 22,
+    "sureAdi": "Hac Suresi",
+    "arapca": "﴿22﴾ سُورَةُ الْحَجِّ",
+    "pageNumber": 331
+  },
+  {
+    "id": 23,
+    "sureAdi": "Mü'minûn Suresi",
+    "arapca": "﴿23﴾ سُورَةُ الْمُؤْمِنُونَ",
+    "pageNumber": 341
+  },
+  {
+    "id": 24,
+    "sureAdi": "Nûr Suresi",
+    "arapca": "﴿24﴾ سُورَةُ النُّورِ",
+    "pageNumber": 349
+  },
+  {
+    "id": 25,
+    "sureAdi": "Furkân Suresi",
+    "arapca": "﴿25﴾ سُورَةُ الْفُرْقَانِ",
+    "pageNumber": 358
+  },
+  {
+    "id": 26,
+    "sureAdi": "Şuarâ Suresi",
+    "arapca": "﴿26﴾ سُورَةُ الشُّعَرَاءِ",
+    "pageNumber": 366
+  },
+  {
+    "id": 27,
+    "sureAdi": "Neml Suresi",
+    "arapca": "﴿27﴾ سُورَةُ النَّمْلِ",
+    "pageNumber": 376
+  },
+  {
+    "id": 28,
+    "sureAdi": "Kasas Suresi",
+    "arapca": "﴿28﴾ سُورَةُ الْقَصَصِ",
+    "pageNumber": 384
+  },
+  {
+    "id": 29,
+    "sureAdi": "Ankebût Suresi",
+    "arapca": "﴿29﴾ سُورَةُ الْعَنْكَبُوتِ",
+    "pageNumber": 395
+  },
+  {
+    "id": 30,
+    "sureAdi": "Rûm Suresi",
+    "arapca": "﴿30﴾ سُورَةُ الرُّومِ",
+    "pageNumber": 403
+  },
+  {
+    "id": 31,
+    "sureAdi": "Lokmân Suresi",
+    "arapca": "﴿31﴾ سُورَةُ لُقْمَانَ",
+    "pageNumber": 410
+  },
+  {
+    "id": 32,
+    "sureAdi": "Secde Suresi",
+    "arapca": "﴿32﴾ سُورَةُ السَّجْدَةِ",
+    "pageNumber": 414
+  },
+  {
+    "id": 33,
+    "sureAdi": "Ahzâb Suresi",
+    "arapca": "﴿33﴾ سُورَةُ الْأَحْزَابِ",
+    "pageNumber": 417
+  },
+  {
+    "id": 34,
+    "sureAdi": "Sebe' Suresi",
+    "arapca": "﴿34﴾ سُورَةُ سَبَأ",
+    "pageNumber": 427
+  },
+  {
+    "id": 35,
+    "sureAdi": "Fâtır Suresi",
+    "arapca": "﴿35﴾ سُورَةُ فَاطِرٍ",
+    "pageNumber": 433
+  },
+  {
+    "id": 36,
+    "sureAdi": "Yâsîn Suresi",
+    "arapca": "﴿36﴾ سُورَةُ يٰسۤٓ",
+    "pageNumber": 439
+  },
+  {
+    "id": 37,
+    "sureAdi": "Sâffât Suresi",
+    "arapca": "﴿37﴾ سُورَةُ الصَّافَّاتِ",
+    "pageNumber": 445
+  },
+  {
+    "id": 38,
+    "sureAdi": "Sâd Suresi",
+    "arapca": "﴿38﴾ سُورَةُ صۤ",
+    "pageNumber": 452
+  },
+  {
+    "id": 39,
+    "sureAdi": "Zümer Suresi",
+    "arapca": "﴿39﴾ سُورَةُ الزُّمَرِ",
+    "pageNumber": 457
+  },
+  {
+    "id": 40,
+    "sureAdi": "Mü'min Suresi",
+    "arapca": "﴿40﴾سُورَةُ الْمُؤْمِنٍِ",
+    "pageNumber": 466
+  },
+  {
+    "id": 41,
+    "sureAdi": "Fussilet Suresi",
+    "arapca": "﴿41﴾ سُورَةُ فُصِّلَتْ",
+    "pageNumber": 476
+  },
+  {
+    "id": 42,
+    "sureAdi": "Şûrâ Suresi",
+    "arapca": "﴿42﴾ سُورَةُ الشُّورٰى",
+    "pageNumber": 482
+  },
+  {
+    "id": 43,
+    "sureAdi": "Zuhruf Suresi",
+    "arapca": "﴿43﴾ سُورَةُ الزُّخْرُفِ",
+    "pageNumber": 488
+  },
+  {
+    "id": 44,
+    "sureAdi": "Duhân Suresi",
+    "arapca": "﴿44﴾ سُورَةُ الدُّخَانِ",
+    "pageNumber": 495
+  },
+  {
+    "id": 45,
+    "sureAdi": "Câsiye Suresi",
+    "arapca": "﴿45﴾ سُورَةُ الْجَاثِيَةِ",
+    "pageNumber": 498
+  },
+  {
+    "id": 46,
+    "sureAdi": "Ahkâf Suresi",
+    "arapca": "﴿46﴾ سُورَةُ الْأَحْقَافِ",
+    "pageNumber": 501
+  },
+  {
+    "id": 47,
+    "sureAdi": "Muhammed Suresi",
+    "arapca": "﴿47﴾ سُورَةُ مُحَمَّدٍ",
+    "pageNumber": 506
+  },
+  {
+    "id": 48,
+    "sureAdi": "Fetih Suresi",
+    "arapca": "﴿48﴾ سُورَةُ الْفَتْحِ",
+    "pageNumber": 510
+  },
+  {
+    "id": 49,
+    "sureAdi": "Hucurât Suresi",
+    "arapca": "﴿49﴾ سُورَةُ الْحُجُرَاتِ",
+    "pageNumber": 514
+  },
+  {
+    "id": 50,
+    "sureAdi": "Kâf Suresi",
+    "arapca": "﴿50﴾ سُورَةُ قۤ",
+    "pageNumber": 517
+  },
+  {
+    "id": 51,
+    "sureAdi": "Zâriyât Suresi",
+    "arapca": "﴿51﴾ سُورَةُ الذَّارِيَاتِ",
+    "pageNumber": 519
+  },
+  {
+    "id": 52,
+    "sureAdi": "Tûr Suresi",
+    "arapca": "﴿52﴾ سُورَةُ الطُّورِ",
+    "pageNumber": 522
+  },
+  {
+    "id": 53,
+    "sureAdi": "Necm Suresi",
+    "arapca": "﴿53﴾ سُورَةُ النَّجْمِ",
+    "pageNumber": 525
+  },
+  {
+    "id": 54,
+    "sureAdi": "Kamer Suresi",
+    "arapca": "﴿54﴾ سُورَةُ الْقَمَرِ",
+    "pageNumber": 527
+  },
+  {
+    "id": 55,
+    "sureAdi": "Rahmân Suresi",
+    "arapca": "﴿55﴾ سُورَةُ الرَّحْمٰنِ",
+    "pageNumber": 530
+  },
+  {
+    "id": 56,
+    "sureAdi": "Vâkıa Suresi",
+    "arapca": "﴿56﴾ سُورَةُ الْوَاقِعَةِ",
+    "pageNumber": 533
+  },
+  {
+    "id": 57,
+    "sureAdi": "Hadîd Suresi",
+    "arapca": "﴿57﴾ سُورَةُ الْحَدِيدِ",
+    "pageNumber": 536
+  },
+  {
+    "id": 58,
+    "sureAdi": "Mücâdele Suresi",
+    "arapca": "﴿58﴾ سُورَةُ الْمُجَادِلَةِ",
+    "pageNumber": 541
+  },
+  {
+    "id": 59,
+    "sureAdi": "Haşr Suresi",
+    "arapca": "﴿59﴾ سُورَةُ الْحَشْرِ",
+    "pageNumber": 544
+  },
+  {
+    "id": 60,
+    "sureAdi": "Mümtehine Suresi",
+    "arapca": "﴿60﴾ سُورَةُ الْمُمْتَحِنَةِ",
+    "pageNumber": 548
+  },
+  {
+    "id": 61,
+    "sureAdi": "Saff Suresi",
+    "arapca": "﴿61﴾ سُورَةُ الصَّفِّ",
+    "pageNumber": 550
+  },
+  {
+    "id": 62,
+    "sureAdi": "Cuma Suresi",
+    "arapca": "﴿62﴾ سُورَةُ الْجُمُعَةِ",
+    "pageNumber": 552
+  },
+  {
+    "id": 63,
+    "sureAdi": "Münâfikûn Suresi",
+    "arapca": "﴿63﴾ سُورَةُ الْمُنَافِقُونَ",
+    "pageNumber": 553
+  },
+  {
+    "id": 64,
+    "sureAdi": "Tegâbün Suresi",
+    "arapca": "﴿64﴾ سُورَةُ التَّغَابُنِ",
+    "pageNumber": 555
+  },
+  {
+    "id": 65,
+    "sureAdi": "Talâk Suresi",
+    "arapca": "﴿65﴾ سُورَةُ الطَّلَاقِ",
+    "pageNumber": 557
+  },
+  {
+    "id": 66,
+    "sureAdi": "Tahrîm Suresi",
+    "arapca": "﴿66﴾ سُورَةُ التَّحْرِيمِ",
+    "pageNumber": 559
+  },
+  {
+    "id": 67,
+    "sureAdi": "Mülk Suresi",
+    "arapca": "﴿67﴾ سُورَةُ الْمُلْكِ",
+    "pageNumber": 561
+  },
+  {
+    "id": 68,
+    "sureAdi": "Kalem Suresi",
+    "arapca": "﴿68﴾ سُورَةُ الْقَلَمِ",
+    "pageNumber": 563
+  },
+  {
+    "id": 69,
+    "sureAdi": "Hâkka Suresi",
+    "arapca": "﴿69﴾ سُورَةُ الْحَاقَّةِ",
+    "pageNumber": 565
+  },
+  {
+    "id": 70,
+    "sureAdi": "Meâric Suresi",
+    "arapca": "﴿70﴾ سُورَةُ الْمَعَارِجِ",
+    "pageNumber": 567
+  },
+  {
+    "id": 71,
+    "sureAdi": "Nûh Suresi",
+    "arapca": "﴿71﴾ سُورَةُ نُوحٍ",
+    "pageNumber": 569
+  },
+  {
+    "id": 72,
+    "sureAdi": "Cin Suresi",
+    "arapca": "﴿72﴾ سُورَةُ الْجِنِّ",
+    "pageNumber": 571
+  },
+  {
+    "id": 73,
+    "sureAdi": "Müzzemmil Suresi",
+    "arapca": "﴿73﴾ سُورَةُ الْمُزَّمِّلِ",
+    "pageNumber": 573
+  },
+  {
+    "id": 74,
+    "sureAdi": "Müddessir Suresi",
+    "arapca": "﴿74﴾ سُورَةُ الْمُدَّثِّرِ",
+    "pageNumber": 574
+  },
+  {
+    "id": 75,
+    "sureAdi": "Kıyâmet Suresi",
+    "arapca": "﴿75﴾ سُورَةُ الْقِيَامَةِ",
+    "pageNumber": 576
+  },
+  {
+    "id": 76,
+    "sureAdi": "İnsân Suresi",
+    "arapca": "﴿76﴾ سُورَةُ الْإِنْسَانِ",
+    "pageNumber": 577
+  },
+  {
+    "id": 77,
+    "sureAdi": "Mürselât Suresi",
+    "arapca": "﴿77﴾ سُورَةُ الْمُرْسَلَاتِ",
+    "pageNumber": 579
+  },
+  {
+    "id": 78,
+    "sureAdi": "Nebe Suresi",
+    "arapca": "﴿78﴾ سُورَةُ النَّبَأِ",
+    "pageNumber": 581
+  },
+  {
+    "id": 79,
+    "sureAdi": "Naziât Suresi",
+    "arapca": "﴿79﴾ سُورَةُ النَّازِعَاتِ",
+    "pageNumber": 582
+  },
+  {
+    "id": 80,
+    "sureAdi": "Abese Suresi",
+    "arapca": "﴿80﴾ سُورَةُ عَبَسَ",
+    "pageNumber": 584
+  },
+  {
+    "id": 81,
+    "sureAdi": "Tekvîr Suresi",
+    "arapca": "﴿81﴾ سُورَةُ التَّكْوِيرِ",
+    "pageNumber": 585
+  },
+  {
+    "id": 82,
+    "sureAdi": "İnfitâr Suresi",
+    "arapca": "﴿82﴾ سُورَةُ الْإِنْفِطَارِ",
+    "pageNumber": 586
+  },
+  {
+    "id": 83,
+    "sureAdi": "Mutaffifîn Suresi",
+    "arapca": "﴿83﴾ سُورَةُ الْمُطَفِّفِينَ",
+    "pageNumber": 587
+  },
+  {
+    "id": 84,
+    "sureAdi": "İnşikâk Suresi",
+    "arapca": "﴿84﴾ سُورَةُ الْإِنْشِقَاقِ",
+    "pageNumber": 588
+  },
+  {
+    "id": 85,
+    "sureAdi": "Burûc Suresi",
+    "arapca": "﴿85﴾ سُورَةُ الْبُرُوجِ",
+    "pageNumber": 589
+  },
+  {
+    "id": 86,
+    "sureAdi": "Târık Suresi",
+    "arapca": "﴿86﴾ سُورَةُ الطَّارِقِ",
+    "pageNumber": 590
+  },
+  {
+    "id": 87,
+    "sureAdi": "A'lâ Suresi",
+    "arapca": "﴿87﴾ سُورَةُ الْأَعْلَى",
+    "pageNumber": 591
+  },
+  {
+    "id": 88,
+    "sureAdi": "Gâşiye Suresi",
+    "arapca": "﴿88﴾ سُورَةُ الْغَاشِيَةِ",
+    "pageNumber": 591
+  },
+  {
+    "id": 89,
+    "sureAdi": "Fecr Suresi",
+    "arapca": "﴿89﴾ سُورَةُ الْفَجْرِ",
+    "pageNumber": 592
+  },
+  {
+    "id": 90,
+    "sureAdi": "Beled Suresi",
+    "arapca": "﴿90﴾ سُورَةُ الْبَلَدِ",
+    "pageNumber": 593
+  },
+  {
+    "id": 91,
+    "sureAdi": "Şems Suresi",
+    "arapca": "﴿91﴾ سُورَةُ الشَّمْسِ",
+    "pageNumber": 594
+  },
+  {
+    "id": 92,
+    "sureAdi": "Leyl Suresi",
+    "arapca": "﴿92﴾ سُورَةُ اللَّيْلِ",
+    "pageNumber": 595
+  },
+  {
+    "id": 93,
+    "sureAdi": "Duhâ Suresi",
+    "arapca": "﴿93﴾ سُورَةُ الضُّحَى",
+    "pageNumber": 595
+  },
+  {
+    "id": 94,
+    "sureAdi": "İnşirâh Suresi",
+    "arapca": "﴿94﴾ سُورَةُ الْاِنْشِرَاحِ",
+    "pageNumber": 596
+  },
+  {
+    "id": 95,
+    "sureAdi": "Tîn Suresi",
+    "arapca": "﴿95﴾ سُورَةُ التِّينِ",
+    "pageNumber": 596
+  },
+  {
+    "id": 96,
+    "sureAdi": "Alak Suresi",
+    "arapca": "﴿96﴾ سُورَةُ الْعَلَقِ",
+    "pageNumber": 597
+  },
+  {
+    "id": 97,
+    "sureAdi": "Kadir Suresi",
+    "arapca": "﴿97﴾ سُورَةُ الْقَدْرِ",
+    "pageNumber": 598
+  },
+  {
+    "id": 98,
+    "sureAdi": "Beyyine Suresi",
+    "arapca": "﴿98﴾ سُورَةُ الْبَيِّنَةِ",
+    "pageNumber": 598
+  },
+  {
+    "id": 99,
+    "sureAdi": "Zilzâl Suresi",
+    "arapca": "﴿99﴾ سُورَةُ الزَّلْزَلَةِ",
+    "pageNumber": 599
+  },
+  {
+    "id": 100,
+    "sureAdi": "Âdiyât Suresi",
+    "arapca": "﴿100﴾ سُورَةُ الْعَادِيَاتِ",
+    "pageNumber": 599
+  },
+  {
+    "id": 101,
+    "sureAdi": "Kâria Suresi",
+    "arapca": "﴿101﴾ سُورَةُ الْقَارِعَةِ",
+    "pageNumber": 600
+  },
+  {
+    "id": 102,
+    "sureAdi": "Tekâsür Suresi",
+    "arapca": "﴿102﴾ سُورَةُ التَّكَاثُرِ",
+    "pageNumber": 600
+  },
+  {
+    "id": 103,
+    "sureAdi": "Asr Suresi",
+    "arapca": "﴿103﴾ سُورَةُ الْعَصْرِ",
+    "pageNumber": 601
+  },
+  {
+    "id": 104,
+    "sureAdi": "Hümeze Suresi",
+    "arapca": "﴿104﴾ سُورَةُ الْهُمَزَةِ",
+    "pageNumber": 601
+  },
+  {
+    "id": 105,
+    "sureAdi": "Fîl Suresi",
+    "arapca": "﴿105﴾ سُورَةُ الْفِيلِ",
+    "pageNumber": 601
+  },
+  {
+    "id": 106,
+    "sureAdi": "Kureyş Suresi",
+    "arapca": "﴿106﴾ سُورَةُ قُرَيْشٍ",
+    "pageNumber": 602
+  },
+  {
+    "id": 107,
+    "sureAdi": "Maûn Suresi",
+    "arapca": "﴿107﴾ سُورَةُ الْمَاعُونَ",
+    "pageNumber": 602
+  },
+  {
+    "id": 108,
+    "sureAdi": "Kevser Suresi",
+    "arapca": "﴿108﴾ سُورَةُ الْكَوْثَرِ",
+    "pageNumber": 602
+    
+  },
+  {
+    "id": 109,
+    "sureAdi": "Kâfirûn Suresi",
+    "arapca": "﴿109﴾ سُورَةُ الْكَافِرُونَ",
+    "pageNumber": 603
+  },
+  {
+    "id": 110,
+    "sureAdi": "Nasr Suresi",
+    "arapca": "﴿110﴾ سُورَةُ النَّصْرِ",
+    "pageNumber": 603
+  },
+  {
+    "id": 111,
+    "sureAdi": "Tebbet Suresi",
+    "arapca": "﴿111﴾ سُورَةُ الْمَسَدِ",
+    "pageNumber": 603
+  },
+  {
+    "id": 112,
+    "sureAdi": "İhlâs Suresi",
+    "arapca": "﴿112﴾ سُورَةُ الْإِخْلَاصِ",
+    "pageNumber": 604
+  },
+  {
+    "id": 113,
+    "sureAdi": "Felak Suresi",
+    "arapca": "﴿113﴾ سُورَةُ الْفَلَقِ",
+    "pageNumber": 604
+  },
+  {
+    "id": 114,
+    "sureAdi": "Nâs Suresi",
+    "arapca": "﴿114﴾ سُورَةُ النَّاسِ",
+    "pageNumber": 604
+  }
+
+]
