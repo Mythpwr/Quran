@@ -5,7 +5,7 @@ Bu projede Kur'an-ı Kerim'i diyanetin sitesine göre sayfa sayfa olarak 'Androi
 #Verilerin yüklenmesi
 Düzenli olması açısından verileri ayrı ayrı aldım.
 1. 'Page' için;
-'''
+```kotlin
 
     fun parsePagesFromJson(jsonString: String): List<Page> {
         val pageList: MutableList<Page> = ArrayList()
@@ -28,10 +28,10 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
 
         return pageList
     }
-
-'''
+ 
 2.'Surah' için;
-''' @Throws(JSONException::class)
+```kotlin
+ @Throws(JSONException::class)
     private fun parseSurahs(surahsArray: JSONArray): List<Surah> {
         val surahList: MutableList<Surah> = ArrayList()
         for (j in 0 until surahsArray.length()) {
@@ -46,10 +46,10 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
             surahList.add(Surah(sureId, sureAdiArapca, sureAdiTr, ayetList, yeniSure))
         }
         return surahList
-    }'''
+    } 
 
 3.'Ayet' için; 
-'''
+```kotlin
     @Throws(JSONException::class)
     private fun parseAyetler(ayetlerArray: JSONArray): List<Ayet> {
         val ayetList: MutableList<Ayet> = ArrayList()
@@ -77,11 +77,11 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
         }
         return ayetList
     }
-'''
+ 
 
 4.Adapter Sınıfı
 Adapter için 'besmele, ayet ve secde ayeti' için 3 farklı viewholder kullanılmıştır.
-'''
+```kotlin
 
 class QuranAdapter // Constructor
     (private val items: MutableList<Any>) :
@@ -192,5 +192,5 @@ class QuranAdapter // Constructor
         private const val TYPE_SECDE_AYET = 2
     }
 }
-'''
+ 
 
