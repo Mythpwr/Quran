@@ -30,7 +30,7 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
     }
  
 2.'Surah' için;
-```kotlin
+
  @Throws(JSONException::class)
     private fun parseSurahs(surahsArray: JSONArray): List<Surah> {
         val surahList: MutableList<Surah> = ArrayList()
@@ -49,7 +49,7 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
     } 
 
 3.'Ayet' için; 
-```kotlin
+
     @Throws(JSONException::class)
     private fun parseAyetler(ayetlerArray: JSONArray): List<Ayet> {
         val ayetList: MutableList<Ayet> = ArrayList()
@@ -81,7 +81,7 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
 
 4.Adapter Sınıfı
 Adapter için 'besmele, ayet ve secde ayeti' için 3 farklı viewholder kullanılmıştır.
-```kotlin
+
 
 class QuranAdapter // Constructor
     (private val items: MutableList<Any>) :
