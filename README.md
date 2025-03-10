@@ -1,8 +1,8 @@
-#Kuran Projesi
+# Kuran Projesi
 Bu projede Kur'an-ı Kerim'i diyanetin sitesine göre sayfa sayfa olarak 'Android' uygulumasını olarak gösterimini sağlar. Veriler Json formatında sayfa sayfa olarak düzenlendi ve 'recyclerview ve adapter' aracılığı ile yüklenir.
 
 
-#Verilerin yüklenmesi
+# Verilerin yüklenmesi
 Düzenli olması açısından verileri ayrı ayrı aldım.
 1. 'Page' için;
 ```kotlin
