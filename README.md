@@ -28,9 +28,10 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
 
         return pageList
     }
- 
-2.'Surah' için;
+ ```
 
+2.'Surah' için;
+```kotlin
  @Throws(JSONException::class)
     private fun parseSurahs(surahsArray: JSONArray): List<Surah> {
         val surahList: MutableList<Surah> = ArrayList()
@@ -47,9 +48,9 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
         }
         return surahList
     } 
-
+```
 3.'Ayet' için; 
-
+```kotlin
     @Throws(JSONException::class)
     private fun parseAyetler(ayetlerArray: JSONArray): List<Ayet> {
         val ayetList: MutableList<Ayet> = ArrayList()
@@ -78,11 +79,11 @@ Düzenli olması açısından verileri ayrı ayrı aldım.
         return ayetList
     }
  
-
+```
 4.Adapter Sınıfı
 Adapter için 'besmele, ayet ve secde ayeti' için 3 farklı viewholder kullanılmıştır.
 
-
+```kotlin
 class QuranAdapter // Constructor
     (private val items: MutableList<Any>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -193,4 +194,4 @@ class QuranAdapter // Constructor
     }
 }
  
-
+```
