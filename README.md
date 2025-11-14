@@ -8,6 +8,8 @@ Kendi projelerimde kullanmak için oluşturdum, başkalarının da yararlanması
 - Ayet numaraları
 - Sure isimleri (Arapça ve Türkçe opsiyonel)
 - JSON formatında temiz veri yapısı
+- Sayfa düzeni formatında
+
 
 ## Kullanım
 Veriyi projelerinizde dilediğiniz gibi kullanabilirsiniz:
