@@ -2,7 +2,7 @@
 
 Bu repo, Kuran-ı Kerim’in sure ve ayetlerini JSON formatında içeren bir veri seti içerir.  
 Kendi projelerimde kullanmak için oluşturuldu ve başkalarının da yararlanması amacıyla paylaşılmıştır.
-
+ 
 ## İçerik
 - Tüm sureler
 - Ayet numaraları
