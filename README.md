@@ -12,4 +12,5 @@ Kendi projelerimde kullanmak için oluşturdum, başkalarının da yararlanması
 
 
 ## Kullanım
-Veriyi projelerinizde dilediğiniz gibi kullanabilirsiniz:
+Apache License 2.0 ile lisanslanmıştır.  
+Detaylar için LICENSE dosyasına bakabilirsiniz.
