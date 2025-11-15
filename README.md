@@ -1,4 +1,4 @@
-# Quran
+# Quran-Data
 
 Bu repo, Kuran-ı Kerim’in sure ve ayetlerini JSON formatında içeren bir veri seti içerir.  
 Kendi projelerimde kullanmak için oluşturdum, başkalarının da yararlanması amacıyla paylaşılmıştır.
